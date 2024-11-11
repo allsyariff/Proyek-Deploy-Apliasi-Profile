@@ -1,0 +1,126 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f4f4f4;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    background-color: #1f3650;
+    color: white;
+    text-align: center;
+    padding: 30px 0;
+}
+
+.profile-image {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border: 3px solid #fff;
+    object-fit: cover;
+    margin: 15px 0;
+}
+
+h1 {
+    font-size: 1.8em;
+    margin-bottom: 10px;
+}
+
+h2 {
+    font-size: 1.5em;
+    margin: 10px 0;
+}
+
+.content {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    padding: 30px;
+    flex-grow: 1;
+}
+
+.info, .personal-info {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 45%;
+}
+
+.info h2, .personal-info h2 {
+    color: #4A90E2;
+    margin-bottom: 10px;
+}
+
+.info p, .personal-info p {
+    margin-bottom: 10px;
+}
+
+/* Social Media Icons */
+.social-media {
+    text-align: center;
+    margin-top: 20px; /* Atur jarak ke atas bila diperlukan */
+}
+
+.social-media h3 {
+    font-size: 1.2em;
+    color: #333; /* Sesuaikan warna dengan tema */
+    margin-bottom: 10px; /* Jarak antara teks dan ikon */
+}
+
+.social-media a {
+    display: inline-block;
+    margin: 0 10px; /* Jarak antar ikon */
+}
+
+.social-icon {
+    width: 40px; /* Sesuaikan ukuran ikon */
+    height: 40px;
+    border-radius: 50%; /* Membuat ikon berbentuk bulat */
+}
+
+.social-icon:hover {
+    transform: scale(1.1);
+}
+
+footer {
+    margin-top: 10px;
+    background-color: #1f3650;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    font-size: 0.9em;
+}
+
+@media (max-width: 768px) {
+    .content {
+        flex-direction: column;
+        align-items: center;
+    }
+    .info, .personal-info {
+        width: 80%;
+    }
+}
+
+@media (max-width: 480px) {
+    .profile-image {
+        width: 100px;
+        height: 100px;
+    }
+    h1 {
+        font-size: 1.5em;
+    }
+    h2 {
+        font-size: 1.2em;
+    }
+    .info, .personal-info {
+        width: 90%;
+    }
+}
